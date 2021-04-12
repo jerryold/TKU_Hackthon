@@ -1,0 +1,12 @@
+extends layout
+
+block head
+  title who撩
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  .content
+    img(class=`description-img ${position}` src="images/homepage.png", alt="")
+    form(action="/signin")
+      .form_line
+        button(type='submit' class=`start-game-btn ${position}`) 開始

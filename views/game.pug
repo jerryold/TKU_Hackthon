@@ -1,0 +1,26 @@
+
+extends layout
+
+block head
+  title loading
+  link(rel='stylesheet', href='/stylesheets/game.css')
+  script(type='text/javascript', src='javascripts/game.js')
+
+block content
+  #position(hidden data-position=`${position}`)
+  .content
+    img(class=`logo ${position}` src="images/logo.png", alt="")
+    img(class=`description-img ${position}` src="images/description.png", alt="")
+    button(class=`start-game-btn ${position}`) 開始遊戲
+    img(hidden class=`game-description2-left ${position}` src="images/cats/333_00000.png" , alt="")
+    img(hidden class=`game-description2-right ${position}` src="images/game_description_right.png" , alt="")
+    button(hidden class=`start-game-btn2 ${position}`) GO！
+    div(hidden class=`game-title ${position}`) 第一劍
+    img(hidden class=`game-bg ${position}` src="images/game_bg.png" , alt="")
+    img(hidden class=`game-img ${position}` src="images/game_bg.png" , alt="")
+    div(hidden class=`game-mask ${position}`)
+    button(hidden data-option="A" class=`game-option game-optionA ${position}`) Default
+    button(hidden data-option="B" class=`game-option game-optionB ${position}`) Default
+    button(hidden data-option="C" class=`game-option game-optionC ${position}`) Default
+    button(hidden data-option="D" class=`game-option game-optionD ${position}`) Default
+    

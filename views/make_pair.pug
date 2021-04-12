@@ -1,0 +1,23 @@
+
+extends layout
+
+block head
+  title loading
+  link(rel='stylesheet', href='/stylesheets/make_pair.css')
+  script(type='text/javascript', src='javascripts/make_pair.js')
+
+block content
+  .content
+    .show
+      img(src="images/QRcode.png" width="980 px")
+      p.user_id #{user_id}
+    .join(hidden)
+      img(src="images/input.png" width="980 px")
+      form(action="make_pair" method="POST")
+        .form_line
+          input(type='text' name='pair_user_id')  
+          .pairBtn
+            button(class="pair-btn" type='submit') 開始配對
+    .tool_footor
+      button.show_id_btn
+      button.join_pair_btn

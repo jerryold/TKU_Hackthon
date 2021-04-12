@@ -1,0 +1,24 @@
+
+extends layout
+
+block head
+  title loading
+  link(rel='stylesheet', href='/stylesheets/setting.css')
+  script(type='text/javascript', src='javascripts/setting.js')
+
+block content
+  .room_id(hidden data-room_id=`${room_id}`)
+  .pair_user_id(hidden data-pair_user_id=`${pair_user_id}`)
+  .content
+    img(class=`logo ${pair_user_id?'logo-left':'logo-right'}` src="images/logo.png", alt="")
+    div(class=`show_text ${pair_user_id?'show_text-left':'show_text-right'}`) 配對中...
+    img(class=`setting-img ${pair_user_id?'setting-img-left':'setting-img-right'}` src="images/setting.png", alt="")
+    .tool-btns(class=`${pair_user_id?'tool-btns-left':'tool-btns-right'}`)
+      button.bigger_btn ＋
+      button.smaller_btn -
+    .position-btns(class=`${pair_user_id?'position-btns-left':'position-btns-right'}`)
+      button.up_btn
+      button.down_btn
+    button(class=`finish-btn ${pair_user_id?'finish-btn-left':'finish-btn-right'}`) 完成
+
+    

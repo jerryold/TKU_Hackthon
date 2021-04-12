@@ -1,0 +1,32 @@
+.content{
+  position:absolute;
+  float: left;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 640px;
+  height:320px;
+  border:1px solid #aaa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+.content form{
+  text-align: center;
+  padding-top:3em;
+}
+
+.form_line{
+  margin-top:1em;
+}
+.form_line .title{
+  font-size:3em;
+}
+
+.form_line button{
+  padding:4px 12px;
+  margin:4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,152 @@
+body,html{
+	position: relative;
+	height:100%;
+}
+
+.content{
+    position: absolute;
+    width:100%;
+		height:100%;
+		top:0%;
+		overflow-x: hidden;
+		overflow-y: scroll;
+    background-image: linear-gradient(to top, #fde9bf, #f8b932);
+}
+
+.content *{
+    position: absolute;
+}
+
+.logo-left{
+	top:64px;
+	left:48px;
+}
+.logo-right{
+  display:none;
+}
+
+.show_text{
+  width: 360px;
+  height: 87px;
+  font-family: NotoSansMonoCJKtc;
+	font-size: 60px;
+	color:#FFF;
+	top:156px;
+}
+.show_text-left{
+	left:100%;
+	transform: translateX(-50%);
+}
+.show_text-right{
+	right:100%;
+	transform: translateX(50%);
+}
+
+.setting-img{
+	width:1150px;
+	height:920px;
+}
+.setting-img-left{
+	left:100%;
+	top:303px;
+	transform: translateX(-50%);
+}
+.setting-img-right{
+	right:100%;
+	top:303px;
+	transform: translateX(50%);
+}
+
+.tool-btns{
+	top:1000px;
+	width:96px;
+	line-height:104px;
+}
+.tool-btns-left{
+	left:144px;
+}
+.tool-btns-right{
+	right:144px;
+}
+
+.tool-btns .bigger_btn,
+.tool-btns .smaller_btn {
+	position: relative;
+  width: 96px;
+  height: 96px;
+  background-color: #ffffff;
+	font-size:60px;
+}
+.tool-btns .bigger_btn{
+  border-top-left-radius: 240px;
+  border-top-right-radius: 240px;
+	top:0
+}
+.tool-btns .smaller_btn{
+  border-bottom-left-radius: 240px;
+  border-bottom-right-radius: 240px;
+	bottom:0
+}
+
+.position-btns .up_btn,
+.position-btns .down_btn {
+	font-size:60px;
+  width: 54px;
+  height: 27px;
+}
+
+.position-btns{
+	width:201px;
+	height:201px;
+	background-color: #fff;
+	border-radius:100%;
+	top:1268px;
+}
+.position-btns-left{
+	left:93px;
+}
+.position-btns-right{
+	right:93px;
+}
+.position-btns .up_btn{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 27px 27px 27px;
+	border-color: transparent transparent #007bff transparent;
+	top:0;
+	left:50%;
+	transform:translateY(100%) translateX(-50%);
+}
+.position-btns .down_btn{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 27px 27px 0 27px;
+	border-color: #007bff transparent transparent transparent;
+	top:100%;
+	left:50%;
+	transform:translateY(-200%) translateX(-50%);
+}
+
+.finish-btn{
+	width: 360px;
+	height: 168px;
+  border-radius: 36px;
+	background-color: #ffffff;
+	top:1400px;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  font-family: NotoSansMonoCJKtc;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f8b932;
+}
+
+.finish-btn-left{
+	left:100%;
+	transform: translateX(-50%);
+}
+.finish-btn-right{
+	right:100%;
+	transform: translateX(50%);
+}

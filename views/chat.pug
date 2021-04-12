@@ -1,0 +1,28 @@
+extends layout
+
+block head
+  title 聊天室
+  link(rel='stylesheet', href='/stylesheets/chat.css')
+  script(type='text/javascript', src='javascripts/chat.js')
+
+block content
+  #contain
+    #content
+      #content_show
+        #contents
+      #content_saying
+        #input_content(contenteditable='true')
+        #description
+          label#sayingto
+            | 你好 
+            span#from
+            |  ，你正在對
+            span#to
+            |  說
+          button#say 發送
+    #users_online
+      #usersbar
+        #usersbardiv
+          #user_label 在線用户
+          #users_list
+            ul#list

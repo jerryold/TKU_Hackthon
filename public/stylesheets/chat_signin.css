@@ -1,0 +1,34 @@
+#content{
+  position:absolute;
+  float: left;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 480px;
+  height:280px;
+  border:1px solid #aaa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+#content form{
+  text-align: center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  float: left;
+  width: 300px;
+  height:100px;
+}
+
+.form_line{
+  margin-bottom:1em;
+}
+.form_line button{
+  padding:4px 12px;
+  margin:4px;
+  border-radius: 4px;
+}

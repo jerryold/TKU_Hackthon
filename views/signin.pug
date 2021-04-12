@@ -1,0 +1,15 @@
+extends layout
+
+block head
+
+  link(rel='stylesheet', href='/stylesheets/signin.css')
+
+block content
+  .content
+    img(src="images/signin.png" width="980 px")
+  
+    form(method='POST')
+      .form_line
+        input(type='text' name='name')
+      .form_line
+        button(type='submit' class='button')

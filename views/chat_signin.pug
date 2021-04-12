@@ -1,0 +1,16 @@
+
+extends layout
+
+block head
+  title 登入
+  link(rel='stylesheet', href='/stylesheets/chat_signin.css')
+
+block content
+  #content
+    form(method='POST')
+      .form_line
+        label.form_label 暱稱：
+        input(type='text' name='name')
+      .form_line
+        button(type='submit' class='button gray') 登入
+        button(type='reset' class='button gray') 取消

@@ -1,0 +1,46 @@
+.content{
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0%;
+  overflow: hidden;
+}
+
+
+.content_form{
+  position:absolute;
+  top:500px;
+  left:100px;
+  text-align: center;
+  padding-top:3em;
+}
+
+.form_line{
+  text-align: center;
+  margin-top:20em;
+}
+.form_line .title{
+  font-size:3em;
+}
+
+.form_line button{
+  position:absolute;
+  bottom:12%;
+  left:33%;
+  width:35%;
+  height:150px;
+  border: 0px solid ;
+  opacity:0;
+  font:inherit;
+}
+
+input{
+  position:absolute;
+  bottom:34%;
+  left:31%;
+  width:47%;
+  height:130px;
+  border: 0px solid;
+  opacity:0;
+  font:inherit;
+}
